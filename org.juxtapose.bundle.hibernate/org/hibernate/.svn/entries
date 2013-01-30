@@ -1,0 +1,842 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/hibernate/org/hibernate
+file:///d:/repository
+
+
+
+2009-06-12T20:35:45.406250Z
+3
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+AssertionFailure.class
+file
+
+
+
+
+2010-03-28T19:23:55.858000Z
+01f54352a2982dcde696ee30fade28a4
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+CacheMode.class
+file
+
+
+
+
+2010-03-28T19:24:05.123000Z
+bbf8fcfda75fdcada8c2981869d55340
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+CallbackException.class
+file
+
+
+
+
+2010-03-28T19:24:05.170000Z
+4d77386723fff29b67376c8c1a5a767b
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ConnectionReleaseMode.class
+file
+
+
+
+
+2010-03-28T19:24:10.936000Z
+a64d355e8dc6d55de6ae69e681e5a74d
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+Criteria.class
+file
+
+
+
+
+2010-03-28T19:24:11.592000Z
+659eabc699c6ab4263de691dc9e4714a
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+DuplicateMappingException.class
+file
+
+
+
+
+2010-03-28T19:24:22.217000Z
+a2a2021deb426293eb460337ba3bbbb4
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+EmptyInterceptor.class
+file
+
+
+
+
+2010-03-28T19:24:22.233000Z
+63912ac445625afb7467d84877a8f4e5
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+EntityMode.class
+file
+
+
+
+
+2010-03-28T19:24:29.576000Z
+d9c408afb43279db1333adb8f5508082
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+FetchMode.class
+file
+
+
+
+
+2010-03-28T19:24:36.014000Z
+c5650c551f70dbbd77bf922dab71b460
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+Filter.class
+file
+
+
+
+
+2010-03-28T19:24:36.076000Z
+61e668f715e92f86ff4eb7bb874cb32c
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+FlushMode.class
+file
+
+
+
+
+2010-03-28T19:24:36.108000Z
+e86b44fd0048c31f7dadbb2989f66291
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+Hibernate.class
+file
+
+
+
+
+2010-03-28T19:24:36.233000Z
+a22bfca04717da436ae0bc80623ebdfc
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+HibernateException.class
+file
+
+
+
+
+2010-03-28T19:24:36.264000Z
+acaecf67a2499abb36bf69ee3d0d2ced
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+InstantiationException.class
+file
+
+
+
+
+2010-03-28T19:24:52.295000Z
+23d286334361dca11c32cb5085183156
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+Interceptor.class
+file
+
+
+
+
+2010-03-28T19:24:53.186000Z
+4a6ea1b398cdd2467e13799fe1b4a4b2
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+InvalidMappingException.class
+file
+
+
+
+
+2010-03-28T19:24:53.201000Z
+677642c98e140ac7d74bec72c76006cc
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+JDBCException.class
+file
+
+
+
+
+2010-03-28T19:24:54.420000Z
+adf82186843faa81e64a56ca72bf8d40
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+LazyInitializationException.class
+file
+
+
+
+
+2010-03-28T19:24:54.920000Z
+e41bb7e121d1cd4b1812b8e185882360
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+LockMode.class
+file
+
+
+
+
+2010-03-28T19:24:59.858000Z
+2a77edca0dcbf5f947119148244ebaaa
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+MappingException.class
+file
+
+
+
+
+2010-03-28T19:25:02.889000Z
+851d98dff6dd336b30d2816b34284a3b
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+MappingNotFoundException.class
+file
+
+
+
+
+2010-03-28T19:25:02.920000Z
+1395300dd42f27b22cdc16e8bb2de23a
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+NonUniqueObjectException.class
+file
+
+
+
+
+2010-03-28T19:25:03.326000Z
+a24f1bdfc6d12bf734f5b88e734237d6
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+NonUniqueResultException.class
+file
+
+
+
+
+2010-03-28T19:25:03.358000Z
+23e7ea430a40694bd7619c1cb0897161
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ObjectDeletedException.class
+file
+
+
+
+
+2010-03-28T19:25:03.389000Z
+0e8bd88745512c22f6a4a128e79e5658
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ObjectNotFoundException.class
+file
+
+
+
+
+2010-03-28T19:25:03.420000Z
+fce867c84de9fb3311e92a41ade86375
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+PersistentObjectException.class
+file
+
+
+
+
+2010-03-28T19:25:04.201000Z
+7c345efa5947eec4dcf0488e388a76db
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+PropertyAccessException.class
+file
+
+
+
+
+2010-03-28T19:25:09.498000Z
+a795e5ff84d6417da04982717fdd78b8
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+PropertyNotFoundException.class
+file
+
+
+
+
+2010-03-28T19:25:09.529000Z
+72f9059c00311d9c33351186c0cf2c04
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+PropertyValueException.class
+file
+
+
+
+
+2010-03-28T19:25:09.545000Z
+e3f5cf6c7253d0935d9216ff7279b00a
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+Query.class
+file
+
+
+
+
+2010-03-28T19:25:11.608000Z
+bf8dfa2ce1ed1ad1fe78b91744c6b047
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+QueryException.class
+file
+
+
+
+
+2010-03-28T19:25:11.654000Z
+b74852ed94d9db1ae7ea60d9464459cf
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+QueryParameterException.class
+file
+
+
+
+
+2010-03-28T19:25:11.686000Z
+71ec0a0d5b3f666abf96ac7825b40ed8
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ReplicationMode$1.class
+file
+
+
+
+
+2010-03-28T19:25:11.717000Z
+4f34476df42696580ebf78efd087e480
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ReplicationMode$2.class
+file
+
+
+
+
+2010-03-28T19:25:11.748000Z
+0c882faf959ec1f96b08ba7c8cb81020
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ReplicationMode$3.class
+file
+
+
+
+
+2010-03-28T19:25:11.779000Z
+956696804f3ff683fc035cca47d2909e
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ReplicationMode$4.class
+file
+
+
+
+
+2010-03-28T19:25:11.795000Z
+76d901e886baf328e69ad0a981751185
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ReplicationMode.class
+file
+
+
+
+
+2010-03-28T19:25:11.842000Z
+eb45e66e388353b8c4eec70572e443ca
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+SQLQuery.class
+file
+
+
+
+
+2010-03-28T19:25:14.358000Z
+cbde3ee425a62d06d9daf66dd8383e92
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ScrollMode.class
+file
+
+
+
+
+2010-03-28T19:25:11.904000Z
+1b7b15054e97845ccecea47091fb6455
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ScrollableResults.class
+file
+
+
+
+
+2010-03-28T19:25:11.889000Z
+2f115a8d44d5dde056c0a9064b56df78
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+Session.class
+file
+
+
+
+
+2010-03-28T19:25:12.889000Z
+c996b079a3b90741d80084deea9ff7ea
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+SessionException.class
+file
+
+
+
+
+2010-03-28T19:25:12.904000Z
+6e009493498ec6fe346f5c55859e7fc6
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+SessionFactory.class
+file
+
+
+
+
+2010-03-28T19:25:12.920000Z
+f3dbb11fa0642565d998f548db0548d0
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+StaleObjectStateException.class
+file
+
+
+
+
+2010-03-28T19:25:14.514000Z
+72379b55ebe785565a59b291dd29f788
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+StaleStateException.class
+file
+
+
+
+
+2010-03-28T19:25:14.545000Z
+abd0d7bd194469d0351678cc07f9887c
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+StatelessSession.class
+file
+
+
+
+
+2010-03-28T19:25:15.592000Z
+08fb6f41145a132028c5f995d51ba00a
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+Transaction.class
+file
+
+
+
+
+2010-03-28T19:25:19.592000Z
+e9069ab437a3c2888f8b441427eb416a
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+TransactionException.class
+file
+
+
+
+
+2010-03-28T19:25:19.608000Z
+852e3e36d5c2d62fafca7a50cc13e6f8
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+TransientObjectException.class
+file
+
+
+
+
+2010-03-28T19:25:20.467000Z
+9f811e6718e2f7bc3c7b9fb77823ec8d
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+TypeMismatchException.class
+file
+
+
+
+
+2010-03-28T19:25:26.420000Z
+c74cba353d4b5068a48c5cef245a1af1
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+UnresolvableObjectException.class
+file
+
+
+
+
+2010-03-28T19:25:26.436000Z
+93a9122f709d8a0576edc255c320dda6
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+WrongClassException.class
+file
+
+
+
+
+2010-03-28T19:25:29.467000Z
+eee31ca1bf23bc65148e7ee4d76b1a23
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+action
+dir
+
+bytecode
+dir
+
+cache
+dir
+
+cfg
+dir
+
+classic
+dir
+
+collection
+dir
+
+connection
+dir
+
+context
+dir
+
+criterion
+dir
+
+dialect
+dir
+
+engine
+dir
+
+event
+dir
+
+exception
+dir
+
+hibernate-configuration-3.0.dtd
+file
+
+
+
+
+2010-03-28T19:24:36.154000Z
+7e18d4a43c798e50c8d31a5170abc325
+2009-06-12T20:35:45.406250Z
+3
+Sony
+
+hibernate-mapping-3.0.dtd
+file
+
+
+
+
+2010-03-28T19:24:36.201000Z
+bfc562f2b931640678527d7180977b80
+2009-06-12T20:35:45.406250Z
+3
+Sony
+
+hql
+dir
+
+id
+dir
+
+impl
+dir
+
+intercept
+dir
+
+jdbc
+dir
+
+jmx
+dir
+
+loader
+dir
+
+lob
+dir
+
+mapping
+dir
+
+metadata
+dir
+
+param
+dir
+
+persister
+dir
+
+pretty
+dir
+
+property
+dir
+
+proxy
+dir
+
+secure
+dir
+
+sql
+dir
+
+stat
+dir
+
+tool
+dir
+
+transaction
+dir
+
+transform
+dir
+
+tuple
+dir
+
+type
+dir
+
+usertype
+dir
+
+util
+dir
+

@@ -1,0 +1,99 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/hibernate/org/hibernate/intercept
+file:///d:/repository
+
+
+
+2009-06-12T20:35:45.406250Z
+3
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+AbstractFieldInterceptor.class
+file
+
+
+
+
+2010-03-28T19:24:52.451000Z
+8ac3556dea7ae48533b7695804b108f4
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+FieldInterceptionHelper.class
+file
+
+
+
+
+2010-03-28T19:24:52.764000Z
+b5f0a0fa680beacdb7d56b92a897b08e
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+FieldInterceptor.class
+file
+
+
+
+
+2010-03-28T19:24:52.795000Z
+62cc82b5074c4008f8c6ac6c31896280
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+LazyPropertyInitializer$1.class
+file
+
+
+
+
+2010-03-28T19:24:53.014000Z
+3c17cb9e87cc945b255d5084188fbe65
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+LazyPropertyInitializer.class
+file
+
+
+
+
+2010-03-28T19:24:53.045000Z
+2334f02aebd521cd75fd6088afd7dab4
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+cglib
+dir
+
+javassist
+dir
+

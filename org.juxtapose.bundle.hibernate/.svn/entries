@@ -1,0 +1,73 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/hibernate
+file:///d:/repository
+
+
+
+2009-06-13T09:27:32.921875Z
+4
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-03-28T19:23:54.373000Z
+dbdbf4a53421375c991dc74cd243c941
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-03-28T19:23:54.404000Z
+6ff463c350c6c41a31826d81221bb6e0
+2009-06-13T09:27:32.921875Z
+4
+Sony
+has-props
+
+META-INF
+dir
+
+build.properties
+file
+
+
+
+
+2010-03-28T19:23:54.420000Z
+c8865b873a42c528fc31aa5e596b7d52
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+org
+dir
+

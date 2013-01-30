@@ -1,0 +1,73 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/org.juxtapose.bundle.apache.commons
+file:///d:/repository
+
+
+
+2009-06-13T10:12:11.734375Z
+21
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-03-28T19:27:00.342000Z
+dbdbf4a53421375c991dc74cd243c941
+2009-06-13T10:12:11.734375Z
+21
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-03-28T19:27:00.373000Z
+e9db4683c83a9012bb9340aeb59ba6b3
+2009-06-13T10:12:11.734375Z
+21
+Sony
+has-props
+
+META-INF
+dir
+
+build.properties
+file
+
+
+
+
+2010-03-28T19:27:00.389000Z
+c8865b873a42c528fc31aa5e596b7d52
+2009-06-13T10:12:11.734375Z
+21
+Sony
+has-props
+
+org
+dir
+

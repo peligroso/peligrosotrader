@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Asm Plug-in
+Bundle-SymbolicName: asm
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Export-Package: org.objectweb.asm,
+ org.objectweb.asm.attrs

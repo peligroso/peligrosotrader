@@ -1,0 +1,97 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/org.juxtapose.bundle.cglib
+file:///d:/repository
+
+
+
+2009-06-13T10:11:09.078125Z
+11
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-03-28T19:18:16.451000Z
+dbdbf4a53421375c991dc74cd243c941
+2009-06-13T10:11:09.078125Z
+11
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-03-28T19:18:16.483000Z
+e2e193d4ab321c30a6d03a50a4a9f7e2
+2009-06-13T10:11:09.078125Z
+11
+Sony
+has-props
+
+LICENSE
+file
+
+
+
+
+2010-03-28T19:18:16.576000Z
+d229da563da18fe5d58cd95a6467d584
+2009-06-13T10:11:09.078125Z
+11
+Sony
+
+META-INF
+dir
+
+NOTICE
+file
+
+
+
+
+2010-03-28T19:18:32.342000Z
+332f6f2596341501d934c2a342ba7eb0
+2009-06-13T10:11:09.078125Z
+11
+Sony
+
+build.properties
+file
+
+
+
+
+2010-03-28T19:18:16.529000Z
+ac2a3da4249ef4f9f0b2dad1cd2f11b7
+2009-06-13T10:11:09.078125Z
+11
+Sony
+has-props
+
+net
+dir
+

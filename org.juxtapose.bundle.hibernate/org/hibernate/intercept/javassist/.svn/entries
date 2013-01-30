@@ -1,0 +1,54 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/hibernate/org/hibernate/intercept/javassist
+file:///d:/repository
+
+
+
+2009-06-12T20:35:45.406250Z
+3
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+FieldInterceptorImpl.class
+file
+
+
+
+
+2010-03-28T19:24:52.920000Z
+83c7b68e26fe16b6403dcf4a15194513
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+JavassistHelper.class
+file
+
+
+
+
+2010-03-28T19:24:52.936000Z
+0734dcf10078c7ce59e0224e4893d8c9
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
