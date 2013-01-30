@@ -1,0 +1,118 @@
+8
+
+dir
+80
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.gui2/src/org/juxtapose/bundle/peligrosotrader/gui2
+file:///d:/repository
+
+
+
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+Activator.java
+file
+
+
+
+
+2010-04-03T20:56:20.502000Z
+1bc6759c42175f6bb65a64a40a332c8a
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+
+Application.java
+file
+
+
+
+
+2010-03-29T15:36:21.629000Z
+1b048f4a1137b91e9d5c4045034fab2f
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+
+ApplicationActionBarAdvisor.java
+file
+
+
+
+
+2010-03-29T15:36:21.645000Z
+1417bf9fadcc4ff810d878965185c26b
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+
+ApplicationWorkbenchAdvisor.java
+file
+
+
+
+
+2010-03-29T15:36:21.645000Z
+7eb1088db0ddc68428d10c26a31793e8
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+
+ApplicationWorkbenchWindowAdvisor.java
+file
+
+
+
+
+2010-04-04T08:21:18.142000Z
+c8309dc5187addc61dac05b85831e4c1
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+
+Perspective.java
+file
+
+
+
+
+2010-03-29T15:46:03.684000Z
+fe8db500b1ca8d6cfc438ef82d8d4db7
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+
+charts
+dir
+
+util
+dir
+
+views
+dir
+
+widgets
+dir
+

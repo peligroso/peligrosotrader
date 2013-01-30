@@ -1,0 +1,76 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.schedule
+file:///d:/repository
+
+
+
+2009-06-13T10:12:26.015625Z
+25
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-03-28T19:19:20.061000Z
+9e4ff477675aa4a70b9184b9cec4d006
+2009-06-13T10:12:26.015625Z
+25
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-03-28T19:19:20.123000Z
+93ed211fea557961c11b73037582e3cf
+2009-06-13T10:12:26.015625Z
+25
+Sony
+has-props
+
+.settings
+dir
+
+META-INF
+dir
+
+build.properties
+file
+
+
+
+
+2010-03-28T19:19:20.404000Z
+72f1e780fe4bd58f12d3d4445498055e
+2009-06-13T10:12:26.015625Z
+25
+Sony
+has-props
+
+src
+dir
+

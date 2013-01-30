@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MySQL Plug-in
+Bundle-SymbolicName: MySQL
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Export-Package: com.mysql.jdbc,
+ com.mysql.jdbc.configs,
+ com.mysql.jdbc.exceptions,
+ com.mysql.jdbc.integration.c3p0,
+ com.mysql.jdbc.integration.jboss,
+ com.mysql.jdbc.jdbc2.optional,
+ com.mysql.jdbc.log,
+ com.mysql.jdbc.profiler,
+ com.mysql.jdbc.util,
+ org.gjt.mm.mysql

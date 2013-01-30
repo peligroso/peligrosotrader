@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Predict Plug-in
+Bundle-SymbolicName: peligrosotrader.predict
+Bundle-Version: 1.0.0
+Bundle-Activator: peligrosotrader.predict.Activator
+Bundle-Localization: plugin
+Import-Package: org.osgi.framework;version="1.3.0"
+Require-Bundle: peligrosotrader.util,
+ hibernate,
+ MySQL,
+ peligrosotrader.socket
+Export-Package: peligrosotrader.predict,
+ peligrosotrader.predict.pm,
+ peligrosotrader.predict.rules,
+ peligrosotrader.predict.scan
+Eclipse-LazyStart: true

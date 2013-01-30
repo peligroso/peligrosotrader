@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gui2
+Bundle-SymbolicName: org.juxtapose.bundle.peligrosotrader.gui2; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.juxtapose.bundle.peligrosotrader.gui2.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ peligrosotrader.util;bundle-version="1.0.0",
+ peligrosotrader.predict;bundle-version="1.0.0",
+ peligrosotrader.socket;bundle-version="1.0.0",
+ peligrosotrader.schedule;bundle-version="1.0.0",
+ jfreechart;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

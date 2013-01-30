@@ -1,0 +1,76 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.insider
+file:///d:/repository
+
+
+
+2009-06-13T10:20:40.000000Z
+43
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-03-28T19:27:54.264000Z
+7ff58674749fad98e1645a0f2088df49
+2009-06-13T10:20:40.000000Z
+43
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-03-28T19:27:54.279000Z
+a051d6a69164c805e875886d62ef8b0b
+2009-06-13T10:20:40.000000Z
+43
+Sony
+has-props
+
+.settings
+dir
+
+META-INF
+dir
+
+build.properties
+file
+
+
+
+
+2010-03-28T19:27:54.467000Z
+72f1e780fe4bd58f12d3d4445498055e
+2009-06-13T10:20:40.000000Z
+43
+Sony
+has-props
+
+src
+dir
+

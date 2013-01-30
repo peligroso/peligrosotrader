@@ -1,0 +1,105 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.predict
+file:///d:/repository
+
+
+
+2010-03-29T15:33:00.319993Z
+73
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-03-28T19:19:27.373000Z
+7ff58674749fad98e1645a0f2088df49
+2009-06-13T10:10:46.718750Z
+10
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-03-28T19:19:27.389000Z
+ae82bc1b7994688f03707988aa076571
+2009-06-13T10:10:46.718750Z
+10
+Sony
+has-props
+
+.settings
+dir
+
+META-INF
+dir
+
+build.properties
+file
+
+
+
+
+2010-03-28T19:19:27.670000Z
+fb2448f6128c0fed9c9de6602f8df759
+2009-06-13T10:10:46.718750Z
+10
+Sony
+has-props
+
+hibernate.cfg.xml
+file
+
+
+
+
+2010-03-28T19:19:27.701000Z
+91815e0d2a15b32366cb508237cdd3c8
+2009-06-13T10:10:46.718750Z
+10
+Sony
+has-props
+
+mappings
+dir
+
+pm.hbm.xml
+file
+
+
+
+
+2010-03-28T19:19:28.139000Z
+77066965c4bf241715e3abaa75274341
+2009-06-13T10:10:46.718750Z
+10
+Sony
+has-props
+
+src
+dir
+

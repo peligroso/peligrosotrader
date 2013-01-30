@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Socket Plug-in
+Bundle-SymbolicName: peligrosotrader.socket
+Bundle-Version: 1.0.0
+Bundle-Activator: peligrosotrader.socket.Activator
+Bundle-Localization: plugin
+Import-Package: org.osgi.framework;version="1.3.0"
+Eclipse-LazyStart: true
+Export-Package: peligrosotrader.socket,
+ peligrosotrader.socket.server
+Require-Bundle: peligrosotrader.util
+

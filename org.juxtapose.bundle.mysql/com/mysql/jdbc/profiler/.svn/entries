@@ -1,0 +1,54 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/org.juxtapose.bundle.mysql/com/mysql/jdbc/profiler
+file:///d:/repository
+
+
+
+2009-06-13T10:20:01.281250Z
+36
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+ProfileEventSink.class
+file
+
+
+
+
+2010-03-28T19:17:51.920000Z
+d0eac7d29d744be44eedfed2196ebff4
+2009-06-13T10:20:01.281250Z
+36
+Sony
+has-props
+
+ProfilerEvent.class
+file
+
+
+
+
+2010-03-28T19:17:51.967000Z
+8275b0e30e7cfa76915469e8de785623
+2009-06-13T10:20:01.281250Z
+36
+Sony
+has-props
+

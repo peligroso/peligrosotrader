@@ -1,0 +1,95 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.predict/src/peligrosotrader/predict
+file:///d:/repository
+
+
+
+2010-03-29T15:33:00.319993Z
+73
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+Activator.java
+file
+
+
+
+
+2010-03-28T19:19:28.623000Z
+f024a28ae513577c8015b432d67181dd
+2009-06-13T10:10:46.718750Z
+10
+Sony
+has-props
+
+IMarketPublisher.java
+file
+
+
+
+
+2010-03-28T19:19:29.123000Z
+3f61fdcebcb4bf8740f6f7547b4fa1bc
+2009-06-13T10:10:46.718750Z
+10
+Sony
+has-props
+
+KeyIDTracker.java
+file
+
+
+
+
+2010-03-28T19:19:29.186000Z
+ab8e38b684ec8e61227960d8f1355990
+2009-06-13T10:10:46.718750Z
+10
+Sony
+has-props
+
+MarketAdapter.java
+file
+
+
+
+
+2010-03-28T19:19:29.217000Z
+fd96f860d839cc00943e5282f018f26e
+2009-06-13T10:10:46.718750Z
+10
+Sony
+has-props
+
+db
+dir
+
+persistence
+dir
+
+pm
+dir
+
+rules
+dir
+
+scan
+dir
+

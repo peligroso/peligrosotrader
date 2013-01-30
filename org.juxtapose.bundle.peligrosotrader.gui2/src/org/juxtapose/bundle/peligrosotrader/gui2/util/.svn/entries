@@ -1,0 +1,54 @@
+8
+
+dir
+80
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.gui2/src/org/juxtapose/bundle/peligrosotrader/gui2/util
+file:///d:/repository
+
+
+
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+Timer.java
+file
+
+
+
+
+2010-03-29T15:45:46.325000Z
+05fe72bfeed1eeadf48f77c7efa4b172
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+
+Translation.java
+file
+
+
+
+
+2010-03-29T15:41:55.281000Z
+c936d326211b5f9c63f681d4dba46f9a
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+

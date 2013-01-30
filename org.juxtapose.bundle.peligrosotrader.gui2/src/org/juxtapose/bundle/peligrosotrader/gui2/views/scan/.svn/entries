@@ -1,0 +1,54 @@
+8
+
+dir
+80
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.gui2/src/org/juxtapose/bundle/peligrosotrader/gui2/views/scan
+file:///d:/repository
+
+
+
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+ResultTable.java
+file
+
+
+
+
+2010-03-29T15:48:15.808000Z
+30e442285c32c665996d6b06734b2948
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+
+ScanView.java
+file
+
+
+
+
+2010-04-03T21:34:33.033000Z
+115cb65d673f7f6de1b4357976b36684
+2010-04-05T09:45:35.9841000Z
+80
+Admin
+has-props
+

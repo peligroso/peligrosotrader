@@ -1,0 +1,189 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.jfreechart/src/org/jfree/xml
+file:///d:/repository
+
+
+
+2009-06-13T10:23:37.265625Z
+56
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+AbstractElementDefinitionHandler.java
+file
+
+
+
+
+2010-04-03T21:13:25.658000Z
+5c0eb7b0348fd96fdc949d5c5e9d4f0f
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+CommentHandler.java
+file
+
+
+
+
+2010-04-03T21:13:26.377000Z
+c4848e835867ff03277bc5541fb2912c
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ElementDefinitionException.java
+file
+
+
+
+
+2010-04-03T21:13:26.408000Z
+2bfc83d34ca598d3e2872296aad3c3da
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ElementDefinitionHandler.java
+file
+
+
+
+
+2010-04-03T21:13:26.424000Z
+072c21445bcfdb969327c8ad84eba49b
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+FrontendDefaultHandler.java
+file
+
+
+
+
+2010-04-03T21:13:28.924000Z
+f71e0d06155df0699807497573c3e447
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+JCommonXMLInfo.java
+file
+
+
+
+
+2010-04-03T21:13:31.065000Z
+3f016794d62a8be6414347a68dc2243d
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ParseException.java
+file
+
+
+
+
+2010-04-03T21:13:31.127000Z
+bee58d96476ca2842914c6ddc121fa4e
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+Parser.java
+file
+
+
+
+
+2010-04-03T21:13:32.627000Z
+5677e3c1c50ec4edff21cd754cc61336
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ParserFrontend.java
+file
+
+
+
+
+2010-04-03T21:13:32.658000Z
+3aa5211526d9493221b7275ecfcfd945
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ParserUtil.java
+file
+
+
+
+
+2010-04-03T21:13:32.690000Z
+403d7c9c4e2adc3b49f9d8ef0f371c67
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+attributehandlers
+dir
+
+factory
+dir
+
+generator
+dir
+
+package.html
+file
+
+
+
+
+2010-04-03T21:13:31.096000Z
+8c8c92a1a7d56555f371e9597456f08b
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+parser
+dir
+
+util
+dir
+
+writer
+dir
+

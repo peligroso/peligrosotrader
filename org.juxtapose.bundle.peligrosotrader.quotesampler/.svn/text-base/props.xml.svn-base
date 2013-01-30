@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<props>
+
+   <property name="sample-rate" value = "60000"/>
+   <property name="old-days" value = "10"/>
+   <property name="start-hour" value = "19"/>
+   <property name="start-minute" value = "00"/>
+   <property name="stop-hour" value = "20"/>
+   <property name="stop-minute" value = "49"/>
+   <property name="connection" value = "jdbc:mysql://localhost:3306/peligrosoTrader"/>
+   <property name="user" value = "root"/>
+   <property name="passwd" value = "hanshans"/>
+   
+   <ticker-set>
+      <ticker
+            name="INVEB.ST"
+            description="Hennes o Mauriz">
+      </ticker>
+   </ticker-set>
+
+</props>

@@ -1,0 +1,73 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/org.juxtapose.bundle.log4j
+file:///d:/repository
+
+
+
+2009-06-13T10:09:51.859375Z
+6
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-03-28T19:29:19.358000Z
+dbdbf4a53421375c991dc74cd243c941
+2009-06-13T10:09:51.859375Z
+6
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-03-28T19:29:19.373000Z
+f533a629fad9bcbe086b969147d68e4f
+2009-06-13T10:09:51.859375Z
+6
+Sony
+has-props
+
+META-INF
+dir
+
+build.properties
+file
+
+
+
+
+2010-03-28T19:29:19.436000Z
+c8865b873a42c528fc31aa5e596b7d52
+2009-06-13T10:09:51.859375Z
+6
+Sony
+has-props
+
+org
+dir
+

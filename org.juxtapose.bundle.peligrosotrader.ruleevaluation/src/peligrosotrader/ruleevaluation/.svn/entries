@@ -1,0 +1,53 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.ruleevaluation/src/peligrosotrader/ruleevaluation
+file:///d:/repository
+
+
+
+2009-06-13T10:20:34.531250Z
+41
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+Activator.java
+file
+
+
+
+
+2010-03-28T19:18:04.451000Z
+11c1fa7a3461e7c604f1f65a4faeb89c
+2009-06-13T10:20:34.531250Z
+41
+Sony
+has-props
+
+classifiers
+dir
+
+mining
+dir
+
+rules
+dir
+
+util
+dir
+

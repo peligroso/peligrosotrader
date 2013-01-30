@@ -1,0 +1,9 @@
+source.. = src/
+output.. = bin/
+bin.includes = META-INF/,\
+               .,\
+               mappings/,\
+               pm.hbm.xml,\
+               hibernate.cfg.xml
+src.includes = hibernate.cfg.xml,\
+               pm.hbm.xml

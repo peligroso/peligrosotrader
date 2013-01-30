@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="org.juxtapose.bundle.peligrosotrader.gui2.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="org.juxtapose.bundle.peligrosotrader.gui2.Perspective"
+            id="org.juxtapose.bundle.peligrosotrader.gui2.perspective">
+      </perspective>
+   </extension>  
+  <extension point="org.eclipse.ui.views"> 
+
+                  <category 
+                        id="peligrosotrader.gui.views"
+                        name="Analyze"> 
+                  </category> 
+
+                  <view 
+                        id="org.juxtapose.bundle.peligrosotrader.gui2.views.analyzeview" 
+                        name="Analyzer" 
+                        category="peligrosotrader.gui.views" 
+                        class="org.juxtapose.bundle.peligrosotrader.gui2.views.AnalyzeView" 
+                        > 
+                  </view> 
+
+      </extension>
+      <extension point="org.eclipse.ui.views"> 
+
+                  <category 
+                        id="org.juxtapose.bundle.peligrosotrader.gui2.views"
+                        name="Sampler"> 
+                  </category> 
+
+                  <view 
+                        id="org.juxtapose.bundle.peligrosotrader.gui2.views.samplerview" 
+                        name="Sampler" 
+                        category="peligrosotrader.gui.views" 
+                        class="org.juxtapose.bundle.peligrosotrader.gui2.views.SamplerView" 
+                        > 
+                  </view> 
+
+      </extension>
+           <extension point="org.eclipse.ui.views"> 
+
+                  <category 
+                        id="org.juxtapose.bundle.peligrosotrader.gui2.views"
+                        name="Swing"> 
+                  </category> 
+
+                  <view 
+                        id="org.juxtapose.bundle.peligrosotrader.gui2.views.swingview" 
+                        name="Swing" 
+                        category="org.juxtapose.bundle.peligrosotrader.gui2.views" 
+                        class="org.juxtapose.bundle.peligrosotrader.gui2.views.SwingView" 
+                        > 
+                  </view>
+                  
+                  <view 
+                        id="org.juxtapose.bundle.peligrosotrader.gui2.views.marketview" 
+                        name="Market" 
+                        category="org.juxtapose.bundle.peligrosotrader.gui2.views" 
+                        class="org.juxtapose.bundle.peligrosotrader.gui2.views.MarketView" 
+                        > 
+                  </view>
+                  
+                  <view 
+                        id="org.juxtapose.bundle.peligrosotrader.gui2.views.scan.scanview" 
+                        name="Scan" 
+                        category="org.juxtapose.bundle.peligrosotrader.gui2.views"
+                        class="org.juxtapose.bundle.peligrosotrader.gui2.views.scan.ScanView" 
+                        > 
+                  </view>
+                  <view 
+                        id="org.juxtapose.bundle.peligrosotrader.gui2.views.adapt.adaptview" 
+                        name="Adapt" 
+                        category="org.juxtapose.bundle.peligrosotrader.gui2.views" 
+                        class="org.juxtapose.bundle.peligrosotrader.gui2.views.adapt.AdaptView" 
+                        > 
+                  </view>  
+
+      </extension>
+      <extension
+            id="product"
+            point="org.eclipse.core.runtime.products">
+         <product
+               application="org.juxtapose.bundle.peligrosotrader.gui2.application"
+               name="Peligroso trader">
+            <property
+                  name="appName"
+                  value="Peligroso trader">
+            </property>
+         </product>
+      </extension>
+
+
+</plugin>

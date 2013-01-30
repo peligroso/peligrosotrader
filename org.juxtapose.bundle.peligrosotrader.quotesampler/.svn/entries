@@ -1,0 +1,79 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.quotesampler
+file:///d:/repository
+
+
+
+2009-06-13T10:26:16.515625Z
+65
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-03-28T19:26:03.483000Z
+b8a1deb8ac5a7b0572a0601331d2ba4b
+2009-06-13T10:26:16.515625Z
+65
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-03-28T19:26:03.498000Z
+a13f375d54d08bb68159a5f98843b0b8
+2009-06-13T10:26:16.515625Z
+65
+Sony
+has-props
+
+META-INF
+dir
+
+com
+dir
+
+org
+dir
+
+peligrosotrader
+dir
+
+props.xml
+file
+
+
+
+
+2010-03-28T19:26:09.514000Z
+871f43d6532fdc871184f06ed1aa6dc9
+2009-06-13T10:26:16.515625Z
+65
+Sony
+has-props
+

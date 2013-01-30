@@ -1,0 +1,156 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.peligrosotrader.util/src/peligrosotrader/util
+file:///d:/repository
+
+
+
+2010-03-29T15:33:35.772664Z
+76
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+Activator.java
+file
+
+
+
+
+2010-03-28T19:27:24.404000Z
+5a4a14249b706397e379308f8176a023
+2009-06-13T10:26:04.203125Z
+62
+Sony
+has-props
+
+Constants.java
+file
+
+
+
+
+2010-03-28T19:27:24.639000Z
+26f399a217aaacc3c5293d24a5ca8397
+2010-02-21T11:24:56.683875Z
+70
+Sony
+has-props
+
+FileHandler.java
+file
+
+
+
+
+2010-03-28T19:27:25.998000Z
+26b46e309cea842ecc7f8f1bce25d7b9
+2009-06-13T10:26:04.203125Z
+62
+Sony
+has-props
+
+IAnalyzeProvider.java
+file
+
+
+
+
+2010-03-28T19:27:26.045000Z
+c090b819183ca54452ebe4aee20956f7
+2010-02-21T11:24:56.683875Z
+70
+Sony
+has-props
+
+IMarketScanner.java
+file
+
+
+
+
+2010-03-28T19:27:26.061000Z
+98fc0395355d9816ba19addcf242b89e
+2009-06-13T10:26:04.203125Z
+62
+Sony
+has-props
+
+LineFormer.java
+file
+
+
+
+
+2010-03-28T19:27:26.092000Z
+d331b59f271e7b4aef6979e71bf08cb2
+2009-06-13T10:26:04.203125Z
+62
+Sony
+has-props
+
+SystemDateFormat.java
+file
+
+
+
+
+2010-03-28T19:27:27.358000Z
+1a0e8aff4229e860bfe74e4a17ae1efa
+2009-06-13T10:26:04.203125Z
+62
+Sony
+has-props
+
+TradeUtil.java
+file
+
+
+
+
+2010-03-28T19:27:31.295000Z
+1340617576f35d2ab75e45645ded0da6
+2009-06-13T10:26:04.203125Z
+62
+Sony
+has-props
+
+db
+dir
+
+feeds
+dir
+
+marketfeeds
+dir
+
+risk
+dir
+
+service
+dir
+
+statistics
+dir
+
+stockloan
+dir
+
+ta
+dir
+

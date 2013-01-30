@@ -1,0 +1,610 @@
+package org.juxtapose.bundle.peligrosotrader.gui2.views.scan;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
+
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.custom.ScrolledComposite;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.layout.RowLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.ui.part.ViewPart;
+import org.eclipse.ui.views.IViewDescriptor;
+
+import org.juxtapose.bundle.peligrosotrader.gui2.Activator;
+import org.juxtapose.bundle.peligrosotrader.gui2.views.MarketView;
+import org.juxtapose.bundle.peligrosotrader.gui2.views.SwingView;
+import peligrosotrader.predict.MarketAdapter;
+import peligrosotrader.predict.rules.RulesTracker;
+import peligrosotrader.predict.scan.IScanResult;
+import peligrosotrader.predict.scan.MarketScanner;
+import peligrosotrader.predict.scan.ScanResult;
+import peligrosotrader.util.Constants;
+import peligrosotrader.util.IMarketScanner;
+import peligrosotrader.util.SystemDateFormat;
+import peligrosotrader.util.marketfeeds.IMarketFeed;
+import peligrosotrader.util.marketfeeds.SAXFeed;
+
+public class ScanView extends ViewPart implements IScanResult, IMarketScanner{
+
+	public static String ID = "org.juxtapose.bundle.peligrosotrader.gui2.views.scan.scanview";
+
+	private Composite m_base;
+	MarketAdapter m_market;
+	
+	ScrolledComposite m_sc;
+	
+//	ArrayList<Composite> m_list = new ArrayList<Composite>();
+//	HashMap<ScanResult, Composite> m_resultToComp = new HashMap<ScanResult, Composite>();
+	
+	ResultTable m_resTable;
+	
+	Display m_display;
+	
+	HashMap<Button, Integer> m_buttonToAlgo = new HashMap<Button, Integer>();
+	
+	@Override
+	public void createPartControl(Composite parent) {
+		// TODO Auto-generated method stub
+		
+		m_sc = new ScrolledComposite(parent, SWT.V_SCROLL | SWT.H_SCROLL);
+		
+		m_display = parent.getDisplay();
+		
+		m_base = new Composite(m_sc, SWT.BORDER);
+		m_sc.setContent(m_base);
+		m_sc.setExpandHorizontal(true);
+		m_sc.setExpandVertical(true);
+		
+		GridLayout gl = new GridLayout(1, false);
+		m_base.setLayout(gl);
+		
+		createAlgoButtons(m_base);
+		
+		Button m_getStatsButt = new Button(m_base, SWT.PUSH);
+		m_getStatsButt.setText("Scan");
+		m_getStatsButt.addSelectionListener(new SelectionAdapter(){
+			public void widgetSelected(SelectionEvent sev){
+				m_market = Activator.getDefault().getMarketPublisher();
+				
+					scanMarket();
+			}
+		});
+		
+		m_resTable = new ResultTable(m_base, this);
+		GridData rtData = new GridData();
+		
+		rtData.grabExcessHorizontalSpace = true;
+		rtData.horizontalAlignment = GridData.FILL;
+		rtData.grabExcessVerticalSpace = true;
+		rtData.verticalAlignment = GridData.FILL;
+		m_resTable.setLayoutData(rtData);
+		
+		org.juxtapose.bundle.peligrosotrader.gui2.Activator.getDefault().setMarketScanner(this);
+	}
+	
+	/**
+	 * 
+	 *
+	 */
+	private void scanMarket()
+	{
+		if(m_market != null){
+			
+			System.out.println("scanning market");
+			Calendar startCal = Calendar.getInstance();
+			startCal.set(Calendar.YEAR, 2000);
+			startCal.set(Calendar.MONTH, Calendar.JANUARY);
+			startCal.set(Calendar.DAY_OF_MONTH, 1);
+			
+			Calendar endCal = Calendar.getInstance();
+			endCal.setTimeInMillis(System.currentTimeMillis());
+			
+			
+			
+//			Calendar endCal = Calendar.getInstance();
+//			endCal.set(Calendar.YEAR, 2007);
+//			endCal.set(Calendar.MONTH, 04);
+//			endCal.set(Calendar.DAY_OF_MONTH, 10);
+			
+			IMarketFeed mf = new SAXFeed();
+			mf.setDates(startCal, endCal);
+			
+			MarketScanner scanner = new MarketScanner(m_market, mf, this, getAlgoSelection());
+			
+			scanner.scanMarket();
+			
+		}
+	}
+	
+	public void scan(){
+		
+		m_display.asyncExec(new Runnable(){
+
+			public void run() {
+				m_market = Activator.getDefault().getMarketPublisher();
+				scanMarket();				
+			}			
+		});
+	}
+	
+	/**
+	 * 
+	 * @param inComposite
+	 */
+	public void createAlgoButtons(Composite inComposite)
+	{
+		Composite algoComp = new Composite(inComposite, SWT.NONE);
+		algoComp.setLayout(new RowLayout());
+		
+		for(int key : RulesTracker.getRuleMap().keySet())
+		{
+			new Label(algoComp, SWT.NONE).setText(RulesTracker.getRuleMap().get(key).getName());
+			Button algButt = new Button(algoComp, SWT.CHECK);
+			algButt.setSelection(true);
+			m_buttonToAlgo.put(algButt, key);
+		}
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public ArrayList<Integer> getAlgoSelection()
+	{
+		ArrayList<Integer> algoSelection = new ArrayList<Integer>();
+		
+		for(Button bKey : m_buttonToAlgo.keySet())
+		{
+			if(bKey.getSelection())
+				algoSelection.add(m_buttonToAlgo.get(bKey));
+		}
+		
+		return algoSelection;
+	}
+
+	@Override
+	public void setFocus() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public Point setMinSize(){
+		return m_base.computeSize(SWT.DEFAULT, SWT.DEFAULT);
+	}
+	/**
+	 * 
+	 */
+	public void setScanResults(final ArrayList<ScanResult> inRes) {
+		
+		m_base.getDisplay().syncExec(new Runnable(){
+
+			public void run()
+			{
+				m_resTable.setResults(inRes);
+
+				m_base.layout();
+				m_sc.setMinSize(setMinSize());
+				
+				createHTML(inRes);
+			}
+		});
+		
+	}
+	
+	/**
+	 * @param inRes
+	 */
+	public void createHTML(final ArrayList<ScanResult> inRes){
+		
+		SwingView sv = (SwingView)getSite().getPage().findView(SwingView.ID);
+
+		long currentTime = System.currentTimeMillis();
+		Date tD = new Date(currentTime);
+//		long beforeTime = currentTime - 17280000000l;
+		
+		Date fD = null;
+		try{
+			fD = SystemDateFormat.DATE_FORMAT.parse("2007-07-01");
+		}catch(ParseException pex){
+			pex.printStackTrace();
+		}
+		
+//		StringBuffer hotList = new StringBuffer();
+		StringBuffer scriptArray = new StringBuffer("var stocks = new Array(");
+		
+		boolean firstAdd = true;
+		
+		for(ScanResult res : inRes){
+			
+			Date startDate = fD;
+			String startDateStr = res.m_properties.get("START_DATE");
+			
+			boolean trendSup = true;
+			boolean supPt = true;
+			boolean trendRes = true;
+			boolean resPt = true;
+			
+			if(startDateStr != null){
+				try{
+					startDate = SystemDateFormat.DATE_FORMAT.parse(startDateStr);
+					if(startDate.getTime() > fD.getTime()){
+						
+						startDate = fD;
+						
+					}
+					else{
+						
+						System.out.println("startDate for "+res.m_ticker+" is "+startDate.toString());
+						trendSup = false;
+						supPt = false;
+						trendRes = false;
+						resPt = false;
+						
+						if(res.m_conns.contains(114))
+							supPt = true;
+						if(res.m_conns.contains(117))
+							resPt = true;
+						if(res.m_conns.contains(106) || res.m_conns.contains(10601) || res.m_conns.contains(10602) || res.m_conns.contains(10603))
+							trendSup = true;
+						if(res.m_conns.contains(116))
+							trendRes = true;
+					}
+				}catch(Exception e){
+					e.printStackTrace();
+				}
+			}
+			
+//			res.m_ticker;
+			String maStr = res.m_properties.get("DAYS");
+			sv.setParamsFromConnections(res.m_conns, maStr, supPt, trendSup, resPt, trendRes);
+			
+			String[] tickerSplit = res.m_ticker.split("\\.");
+			String ticker = tickerSplit[0];
+			
+			String ruleIDStr = getRuleIDString(res.m_conns);
+			
+			sv.setChartFromSystem(res.m_ticker, true, false, SystemDateFormat.DATE_FORMAT.format(startDate), SystemDateFormat.DATE_FORMAT.format(tD), 0);
+//			hotList.append("<span><a href=\"analys.jsp?t="+ticker+"&ids="+ruleIDStr+"\">"+res.m_corp+"</a></span><br/>\n");
+			
+			if(firstAdd)
+				firstAdd = false;
+			else
+				scriptArray.append(", ");
+			
+			String posNegCode = getPosNegCode(res.m_conns);
+			scriptArray.append("'"+res.m_corp+"|"+ticker+"|"+ruleIDStr+"|"+posNegCode+"'");
+		}
+		
+		scriptArray.append(");");
+		
+		try{
+//			FileWriter fw = new FileWriter("D:\\peligroso\\test-workspace\\peligroso\\WebContent\\hotlist.html");
+//			fw.write(hotList.toString());
+//			fw.close();
+			
+			BufferedReader br = new BufferedReader(new FileReader(Constants.WEB_CONTENT+Constants.HOT_SCRIPT_TEMPLATE_FILE));
+			
+			StringBuffer newScript = new StringBuffer();
+			newScript.append(scriptArray.toString()+"\n");
+			newScript.append("var time = '<br/><br/>Last scan was done: "+tD.toString()+"';\n");
+
+			FileWriter fw2 = new FileWriter(Constants.WEB_CONTENT+Constants.HOT_LIST_SCRIPT_FILE);
+			String line = br.readLine();
+			
+			while( line != null)
+			{
+				newScript.append(line+"\n");
+				line = br.readLine();				
+			}
+			
+			fw2.write(newScript.toString());
+			fw2.close();
+			
+			setFrontSide(inRes);
+			
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public String getPosNegCode(Set<Integer> inConns){
+		
+		int pos = containesPositive(inConns);
+		int negs = containesNegative(inConns);
+		
+		return (pos+"|"+negs);
+		
+
+	}
+	
+	public int containesPositive(Set<Integer> inConns){
+		
+		int count = 0;
+		
+		for(Integer i : inConns){
+			if(i == 102 ||
+			i == 103 ||
+			i == 106 ||
+			i == 10601 ||
+			i == 10602 ||
+			i == 10603 ||
+			i == 107 ||
+			i == 108 ||
+			i == 10801 ||
+			i == 10802 ||
+			i == 10803 ||
+			i == 11301 ||
+			i == 11302 ||
+			i == 11303 ||
+			i == 114)
+				count++;
+		}
+		
+		return count;
+
+	}
+	
+	/**
+	 * @param inConns
+	 * @return
+	 */
+	public int containesNegative(Set<Integer> inConns){
+		
+		int count = 0;
+		
+		for(Integer i : inConns){
+			if(i == 110 ||
+			i == 111 ||
+			i == 115 ||
+			i == 112 ||
+			i == 11201 ||
+			i == 11202 ||
+			i == 11203 ||
+			i == 109 ||
+			i == 10901 ||
+			i == 10902 ||
+			i == 10903 ||
+			i == 116)
+				count++;
+		}
+		
+		return count;
+
+	}
+	
+	/**
+	 * @param inRes
+	 * @return
+	 */
+	public static ArrayList<ScanResult> scramble(ArrayList<ScanResult> inRes)
+	{
+		Random rand = new Random();
+		
+		ArrayList<ScanResult> scrambled = new ArrayList<ScanResult>(inRes.size());
+		
+		for(int i = 0; i < inRes.size(); i++){
+			scrambled.add(null);
+		}
+		
+		for(int i = 0; i < inRes.size(); i++){
+						
+			int newIndex = rand.nextInt(inRes.size()-1);
+			while(scrambled.get(newIndex) != null){
+				
+				newIndex++;
+				if(newIndex >= inRes.size())
+					newIndex = 0;
+			}
+			scrambled.remove(newIndex);
+			scrambled.add(newIndex, inRes.get(i));
+		}
+		return scrambled;
+	}
+	
+	public static void main(String args[])
+	{
+		ArrayList<ScanResult> test = new ArrayList<ScanResult>();
+		test.add(new ScanResult(null, "1", "1", null));
+		test.add(new ScanResult(null, "2", "1", null));
+		test.add(new ScanResult(null, "3", "1", null));
+		test.add(new ScanResult(null, "4", "1", null));
+		test.add(new ScanResult(null, "5", "1", null));
+		test.add(new ScanResult(null, "6", "1", null));
+		
+		ArrayList<ScanResult> sram = scramble(test);
+	}
+	
+	/**
+	 * @param inRes
+	 */
+	public void setFrontSide(ArrayList<ScanResult> inRes)
+	{
+		StringBuffer html1 = new StringBuffer("");
+		boolean oneDone = false;
+		StringBuffer html2 = new StringBuffer("");
+		boolean twoDone = false;
+		
+		int capType = 1;
+		
+		ArrayList<ScanResult> scrambled = scramble(inRes);
+		
+		while(!twoDone && capType < 4){
+
+			for(ScanResult res : scrambled)
+			{
+				String[] tickerSplit = res.m_ticker.split("\\.");
+				String ticker = tickerSplit[0];
+
+				String desc = null;
+
+				if(res.m_conns.contains(capType)){
+
+					for(Integer conn : res.m_conns)
+					{					
+						if((conn > 100 && conn < 200) || (conn > 10000 && conn < 20000))
+						{
+							desc = getRuleDesc(conn, res.m_corp);
+							if(desc != null)
+								break;
+						}
+					}
+					if(desc != null){
+						String ruleIDStr = getRuleIDString(res.m_conns);
+						String link = "<span><a href=\"teknisk-analys.jsp?t="+ticker+"&ids="+ruleIDStr+"\">Se analysen</a></span>";
+						
+						if(!oneDone){
+							html1.append("\n<img src=\"images/analysis/"+ticker+".png\" style=\"height:80px; width=110px\" alt=\"\" align=\"left\" style=\"margin-right:24px\"><br/>\n");
+							html1.append(desc+link+"<br/>\n");
+							oneDone = true;
+						}
+						else{
+							html2.append("<img src=\"images/analysis/"+ticker+".png\" style=\"height:80px; width=110px\" alt=\"\" align=\"left\" style=\"margin-right:24px\"><br/>\n");
+							html2.append(desc+link+"<br/>\n");
+							twoDone = true;
+							break;
+						}
+					}
+				}			
+			}
+			
+			capType++;
+		}
+		
+		try{
+			FileWriter fw = new FileWriter("D:\\peligroso\\test-workspace\\peligroso\\WebContent\\startupdate.html");
+			fw.write(html1.toString()+html2.toString());
+			fw.close();
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public String getRuleDesc(int id, String ticker){
+		
+		if(id == 102){
+			return (ticker+" har n&aring;tt en ny h&ouml;gstanotering. Det inneb&auml;r m&ouml;jligheten att aktien &auml;r under omv&auml;rdering och statistiskt sett s&aring; indikerar det en positiv utveckling<br/>");
+		}
+		else if(id == 111){
+			return (ticker+" har n&aring;tt en ny l&auml;gstanotering. Det inneb&auml;r m&ouml;jligheten att aktien &auml;r under omv&auml;rdering och statistiskt sett s&aring; indikerar det att utveckling som f&ouml;ljer &auml;r negativ<br/>");
+		}
+		else if(id == 103){
+			return (ticker+" ligger mot ett flytande medelv&auml;rde som st&ouml;djer priskurvan. Detta indikerar en positiv utveckling. <br/>");
+		}
+		else if(id == 106){
+			return (ticker+" ligger mot ett trendgolv som kan ge st&ouml;d &aring;t priskurvan. Detta indikerar en positiv utveckling. <br/>");
+		}
+		else if(id == 10601){
+			return (ticker+" ligger mot ett trendgolv som kan ge st&ouml;d &aring;t priskurvan. Eftersom trenden &auml;r stigande, s&aring; &ouml;kar tendensen f&ouml;r en f&ouml;ljande positiv utveckling. <br/>");
+		}
+		else if(id == 10602){
+			return (ticker+" ligger mot ett trendgolv som kan ge st&ouml;d &aring;t priskurvan. Trendgolvet &auml;r starkt d&aring; prisbildningen har v&auml;nt vid trendgolvet flertalet g&aring;nger tidigare. Detta &ouml;kar tendensen f&ouml;r en f&ouml;ljande positiv utveckling. <br/>");
+		}
+		else if(id == 10603){
+			return (ticker+" ligger mot ett trendgolv som kan ge st&ouml;d &aring;t priskurvan. Dels s&aring; &auml;r trenden stigande och dels s&aring; &auml;r golvet starkt d&aring; prisbildningen har v&auml;nt vid trendgolvet flertalet g&aring;nger tidigare. B&aring;da dessa attribut &ouml;kar sannorlikheten f&ouml;r en positiv utveckling. <br/>");
+		}
+		else if(id == 107){
+			return (ticker+" följer en exponentiell medell&aring;ng trendutveckling. Detta indikerar en fortsatt positiv utveckling p&aring; ett par m&aring;naders sikt. <br/>");
+		}
+		else if(id == 110){
+			return (ticker+" n&aring;tt ett flytande medelv&auml;rde som kv&auml;ver priskurvan. Denna niv&aring; har tidigare visat sig vara en niv&aring; p&aring; vilken kursen v&auml;nt ned&aring;t. Detta indikerar en svagt negativ utveckling. <br/>");
+		}
+		else if(id == 109 || id == 10901 || id == 10902){
+			return (ticker+" har under dagen r&ouml;rt sig kraftigt upp&aring;t i f&ouml;rh&aring;llande till en normal dagsr&ouml;relse f&ouml;r aktien. Detta har en tendens att leda till en rekyleffekt. I ett mycket n&auml;rliggande perspektiv s&aring; ger detta en indikation om negativ utveckling. Om den kraftiga prisr&ouml;relsen uppst&aring;t i samband med h&ouml;g volym och kursp&aring;verkande nyheter finns det en p&aring;visad tendens till att den positiva utvecklingen forts&auml;tter i ett l&auml;ngre perspektiv. Om aktien st&auml;nger p&aring; dagsh&ouml;gsta s&aring; &ouml;kar risken f&ouml;r rekyl<br/>");
+		}
+		else if(id == 108 || id == 10801 || id == 10802){
+			return (ticker+" har under dagen r&ouml;rt sig kraftigt ned&aring;t i f&ouml;rh&aring;llande till en normal dagsr&ouml;relse f&ouml;r aktien. Detta har en tendens att leda till en rekyleffekt. I ett mycket n&auml;rliggande perspektiv s&aring; ger detta en indikation om positiv utveckling.  <br/>");
+		}
+		else if(id == 112 || id == 11202 || id == 11203){
+			return (ticker+" har &ouml;ppnat h&ouml;gt ovanf&ouml;r g&aring;rdagens st&auml;gning. Detta har en tendens att leda till en rekyleffekt. I ett mycket n&auml;rliggande perspektiv s&aring; ger detta en indikation om negativ utveckling <br/>");
+		}
+		else if(id == 11201){
+			return (ticker+" har &ouml;ppnat h&ouml;gt ovanf&ouml;r g&aring;rdagens st&auml;gning. Detta har en tendens att leda till en rekyleffekt. D&aring; aktiens fortsatta intradagsr&ouml;relse varit otydlig &ouml;kar rekylrisken avsev&auml;rt<br/>");
+		}
+		else if(id == 113 || id == 11302 || id == 11303){
+			return (ticker+" har &ouml;ppnat l&aring;ngt under g&aring;rdagens st&auml;gning. Detta har en tendens att leda till en rekyleffekt. I ett mycket n&auml;rliggande perspektiv s&aring; ger detta en indikation om positiv utveckling <br/>");
+		}
+		else if(id == 11301){
+			return (ticker+" har &ouml;ppnat l&aring;ngt under g&aring;rdagens st&auml;gning. Detta har en tendens att leda till en rekyleffekt. D&aring; aktiens fortsatta intradagsr&ouml;relse varit otydlig &ouml;kar chanserna till rekyl avsev&auml;rt<br/>");
+		}
+		else if(id == 114){
+			return (ticker+" har lagt sig mot en niv&aring; som tidigare utm&auml;rkt sig som en v&auml;ndpunkt under h&ouml;g oms&auml;ttning. Det faktum att denna niv&aring; tidigare lockat till sig k&ouml;pare kan vara orsaken till att vi finner en statistisk tendens till positiv utveckling efter att detta intr&auml;ffat.<br/>");
+		}
+		else if(id == 116){
+			return (ticker+" ligger mot ett trendtak som kan visa sig vara en v&auml;ndpunkt prisbildningen. Detta indikerar en negativ utveckling. <br/>");
+		}
+		else if(id == 117){
+			return (ticker+" har lagt sig mot en niv&aring; som tidigare utm&auml;rkt sig som en v&auml;ndpunkt under h&ouml;g oms&auml;ttning. Det faktum att denna niv&aring; tidigare lockat till sig s&auml;ljare kan vara orsaken till att vi finner en statistisk tendens till negativ utveckling efter att detta intr&auml;ffat. <br/>");
+		}
+		
+		return null;
+	}
+	
+	/**
+	 * 
+	 * @param inString
+	 * @return
+	 */
+	public Set<Integer> parseOutInts(String inString)
+	{
+		String[] intStrs = inString.split(",");
+//		int[] ints = new int[intStrs.length];
+		Set<Integer> ints = new HashSet<Integer>();
+		
+		if(inString.equals(""))
+			return ints;
+		
+		for(int i = 0; i < intStrs.length; i++){
+			try{
+				ints.add(Integer.parseInt(intStrs[i]));
+			}catch(Exception e)
+			{
+				MessageDialog.openWarning(m_base.getShell(), "Syntax error", "Syntax error");
+				return null;
+			}
+		}
+		return ints;
+	}
+	
+	public String getRuleIDString(Set<Integer> inConns)
+	{
+		StringBuffer sb = new StringBuffer();
+		
+		sb.append("-");
+		for(Integer conn : inConns)
+		{
+			
+			if((conn > 100 && conn < 200) || (conn > 10000 && conn < 20000) || (conn <= 3))
+			{
+				sb.append(conn.toString());
+				sb.append("-");
+			}
+		}
+		return sb.toString();
+	}
+}

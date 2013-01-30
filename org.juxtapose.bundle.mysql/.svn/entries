@@ -1,0 +1,76 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/org.juxtapose.bundle.mysql
+file:///d:/repository
+
+
+
+2009-06-13T10:20:01.281250Z
+36
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-03-28T19:17:41.889000Z
+dbdbf4a53421375c991dc74cd243c941
+2009-06-13T10:20:01.281250Z
+36
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-03-28T19:17:41.904000Z
+9e457b9678604a82e29eef430cdade2a
+2009-06-13T10:20:01.281250Z
+36
+Sony
+has-props
+
+META-INF
+dir
+
+build.properties
+file
+
+
+
+
+2010-03-28T19:17:42.092000Z
+f856fadfd3d46eb7419ab713ae86d712
+2009-06-13T10:20:01.281250Z
+36
+Sony
+has-props
+
+com
+dir
+
+org
+dir
+

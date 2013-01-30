@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="peligrosotrader.predict.pm.PM" table="T_PM">
+        <id name="id" column="COL_ID">
+            <generator class="native"/>
+        </id>
+        <property name="startHoldDay" type="int" column="COL_STARTHDAY"/>
+        <property name="endHoldDay" type="int" column="COL_ENDHDAY"/>
+    </class>
+</hibernate-mapping>

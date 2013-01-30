@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: peligrosotrader.ruleevaluation Plug-in
+Bundle-SymbolicName: peligrosotrader.ruleevaluation
+Bundle-Version: 1.0.0
+Bundle-Activator: peligrosotrader.ruleevaluation.Activator
+Bundle-Localization: plugin
+Import-Package: org.osgi.framework;version="1.3.0"
+Require-Bundle: weka,
+ peligrosotrader.util,
+ org.eclipse.core.runtime,
+ org.eclipse.osgi
+Export-Package: peligrosotrader.ruleevaluation,
+ peligrosotrader.ruleevaluation.classifiers.candlestick,
+ peligrosotrader.ruleevaluation.mining,
+ peligrosotrader.ruleevaluation.rules,
+ peligrosotrader.ruleevaluation.util
