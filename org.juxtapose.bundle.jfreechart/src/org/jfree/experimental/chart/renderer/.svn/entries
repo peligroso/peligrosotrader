@@ -1,0 +1,73 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.jfreechart/src/org/jfree/experimental/chart/renderer
+file:///d:/repository
+
+
+
+2009-06-13T10:23:37.265625Z
+56
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+GrayPaintScale.java
+file
+
+
+
+
+2010-04-03T21:13:07.955000Z
+ab8d5791da0eb7e0d476667cd713e5c0
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LookupPaintScale.java
+file
+
+
+
+
+2010-04-03T21:13:08.205000Z
+ab44ea0632cd74c905175b784e797166
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+PaintScale.java
+file
+
+
+
+
+2010-04-03T21:13:08.237000Z
+4148f292264ecdfdceaea024ec5b48a8
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+junit
+dir
+
+xy
+dir
+

@@ -1,0 +1,47 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/hibernate/org/hibernate/proxy/pojo
+file:///d:/repository
+
+
+
+2009-06-12T20:35:45.406250Z
+3
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+BasicLazyInitializer.class
+file
+
+
+
+
+2010-03-28T19:25:10.498000Z
+f90d28be58c02e14d08c8004c3439d22
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+cglib
+dir
+
+javassist
+dir
+

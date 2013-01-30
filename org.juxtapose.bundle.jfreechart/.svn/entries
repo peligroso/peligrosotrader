@@ -1,0 +1,76 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.jfreechart
+file:///d:/repository
+
+
+
+2009-06-13T10:23:37.265625Z
+56
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+.classpath
+file
+
+
+
+
+2010-04-03T21:12:08.783000Z
+e56a93cd6c04cffffccc132255249fbe
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+.project
+file
+
+
+
+
+2010-04-03T21:12:08.799000Z
+d86c2e2eac4537b28e1b1a885a9596e9
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+.settings
+dir
+
+META-INF
+dir
+
+build.properties
+file
+
+
+
+
+2010-04-03T21:12:09.033000Z
+72f1e780fe4bd58f12d3d4445498055e
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+src
+dir
+

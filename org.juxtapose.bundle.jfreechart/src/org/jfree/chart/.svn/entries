@@ -1,0 +1,520 @@
+8
+
+dir
+78
+file:///d:/repository/trunk/org.juxtapose.bundle.jfreechart/src/org/jfree/chart
+file:///d:/repository
+
+
+
+2009-06-13T10:23:37.265625Z
+56
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+ChartColor.java
+file
+
+
+
+
+2010-04-03T21:12:20.408000Z
+e2a7bcc6389c0e775af13cddc5819449
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ChartFactory.java
+file
+
+
+
+
+2010-04-03T21:12:20.502000Z
+f07f5d69db3f46a0fc897259a5bc1445
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ChartFrame.java
+file
+
+
+
+
+2010-04-03T21:12:20.549000Z
+d877fe24eb886aec470ae4d272e400df
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ChartMouseEvent.java
+file
+
+
+
+
+2010-04-03T21:12:20.596000Z
+9447c85c41ee8cf009d1b427687b668a
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ChartMouseListener.java
+file
+
+
+
+
+2010-04-03T21:12:20.612000Z
+f97a8a9455d1ed566e4d02656772cdbe
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ChartPanel.java
+file
+
+
+
+
+2010-04-03T21:12:20.658000Z
+b03995b6653a81f7a79d8d20ab82507d
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ChartRenderingInfo.java
+file
+
+
+
+
+2010-04-03T21:12:20.721000Z
+ea73dee6d3320f2d42624b621f44914f
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ChartUtilities.java
+file
+
+
+
+
+2010-04-03T21:12:20.752000Z
+3520d0a42224806277b57456903a2a7f
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+ClipPath.java
+file
+
+
+
+
+2010-04-03T21:12:20.768000Z
+315ffbf30688e9bbb0a857f2db4f4285
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+DrawableLegendItem.java
+file
+
+
+
+
+2010-04-03T21:12:21.237000Z
+4d1f610d35ee1d99611ceb6ce00748e8
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+Effect3D.java
+file
+
+
+
+
+2010-04-03T21:12:22.908000Z
+6e0f1d2ea689b2656a11b760a31d0dfb
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+HashUtilities.java
+file
+
+
+
+
+2010-04-03T21:12:26.580000Z
+c4cb4fd990e99222ca211b5ec1e31afc
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+JFreeChart.java
+file
+
+
+
+
+2010-04-03T21:12:28.330000Z
+895e9ee3e795d3ac4feb3ba29390dc6f
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LegendItem.java
+file
+
+
+
+
+2010-04-03T21:12:32.033000Z
+42e83d4c53352a2c8296c5a535b6c6a1
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LegendItemCollection.java
+file
+
+
+
+
+2010-04-03T21:12:32.096000Z
+d1f9158b372bd318e523947e4b34d59d
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LegendItemSource.java
+file
+
+
+
+
+2010-04-03T21:12:32.127000Z
+f042c2c211175a4c7093b1ef50aa702e
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LegendRenderingOrder.java
+file
+
+
+
+
+2010-04-03T21:12:32.143000Z
+53252a635d5bd4dd75ce0c5ee902db32
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle.properties
+file
+
+
+
+
+2010-04-03T21:12:32.174000Z
+1417e817d04f4e59566b97dee0e4daac
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_de.properties
+file
+
+
+
+
+2010-04-03T21:12:32.221000Z
+e6ff0497ccf939d523ae480aa92a3086
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_es.properties
+file
+
+
+
+
+2010-04-03T21:12:32.252000Z
+18905c71866d377fb4fb1a5e54b05ab4
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_fr.properties
+file
+
+
+
+
+2010-04-03T21:12:32.283000Z
+55f924f307e1c090826be81cbd590046
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_it.properties
+file
+
+
+
+
+2010-04-03T21:12:32.299000Z
+d9dd3c29c2e115c228b9d1b6d75dac90
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_nl.properties
+file
+
+
+
+
+2010-04-03T21:12:32.330000Z
+f1762161500d587ac0d9c91820742a98
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_pl.properties
+file
+
+
+
+
+2010-04-03T21:12:32.362000Z
+328345b3538b19aa1b05c1d62f209ffe
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_pt_PT.properties
+file
+
+
+
+
+2010-04-03T21:12:32.377000Z
+6e7d838b90c1a01d9ec4d9191f3c160f
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_ru.properties
+file
+
+
+
+
+2010-04-03T21:12:32.408000Z
+77047709e6e48e3cb011badc567bd2b3
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_zh_CN.properties
+file
+
+
+
+
+2010-04-03T21:12:32.471000Z
+e3e08ebf1d8f124e30947228cd7a1d71
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+LocalizationBundle_zh_TW.properties
+file
+
+
+
+
+2010-04-03T21:12:32.518000Z
+62b57081e94ca9be1c279692a8ecb8d4
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+PaintMap.java
+file
+
+
+
+
+2010-04-03T21:12:33.518000Z
+6c13abf8f64b609c4e062745afcdd4ec
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+PolarChartPanel.java
+file
+
+
+
+
+2010-04-03T21:12:37.877000Z
+49b7ad70834faee10a256ee05ca80a7f
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+StrokeMap.java
+file
+
+
+
+
+2010-04-03T21:12:44.065000Z
+f9fe971590885d54bea49ff02463b666
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+annotations
+dir
+
+axis
+dir
+
+block
+dir
+
+demo
+dir
+
+editor
+dir
+
+encoders
+dir
+
+entity
+dir
+
+event
+dir
+
+gorilla.jpg
+file
+
+
+
+
+2010-04-03T21:12:26.549000Z
+7c8f45879237ae87959ca5e8e4baeec8
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+imagemap
+dir
+
+junit
+dir
+
+labels
+dir
+
+needle
+dir
+
+package.html
+file
+
+
+
+
+2010-04-03T21:12:33.471000Z
+4e270c7d7b61d3cdb34075e839a902db
+2009-06-13T10:23:37.265625Z
+56
+Sony
+has-props
+
+plot
+dir
+
+renderer
+dir
+
+resources
+dir
+
+servlet
+dir
+
+title
+dir
+
+tooltips
+dir
+
+ui
+dir
+
+urls
+dir
+
+util
+dir
+

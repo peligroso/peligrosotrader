@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry path="src" kind="src"/>
+	<classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"/>
+	<classpathentry path="org.eclipse.pde.core.requiredPlugins" kind="con"/>
+	<classpathentry path="C:/jfreechart-1.0.3/lib/gnujaxp.jar" kind="lib"/>
+	<classpathentry path="C:/jfreechart-1.0.3/lib/itext-1.4.6.jar" kind="lib"/>
+	<classpathentry path="C:/jfreechart-1.0.3/lib/jcommon-1.0.6.jar" kind="lib"/>
+	<classpathentry path="C:/jfreechart-1.0.3/lib/jfreechart-1.0.3.jar" kind="lib"/>
+	<classpathentry path="C:/jfreechart-1.0.3/lib/jfreechart-1.0.3-experimental.jar" kind="lib"/>
+	<classpathentry path="C:/jfreechart-1.0.3/lib/junit.jar" kind="lib"/>
+	<classpathentry path="C:/jfreechart-1.0.3/lib/servlet.jar" kind="lib"/>
+	<classpathentry path="bin" kind="output"/>
+</classpath>

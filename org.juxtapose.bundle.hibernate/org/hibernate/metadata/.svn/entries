@@ -1,0 +1,54 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/hibernate/org/hibernate/metadata
+file:///d:/repository
+
+
+
+2009-06-12T20:35:45.406250Z
+3
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+ClassMetadata.class
+file
+
+
+
+
+2010-03-28T19:25:03.170000Z
+fe4cbfa4653e4b1355f3e818470b2d54
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+CollectionMetadata.class
+file
+
+
+
+
+2010-03-28T19:25:03.201000Z
+175b443e26a0a1c91bf9c5dac2a4c3c5
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+

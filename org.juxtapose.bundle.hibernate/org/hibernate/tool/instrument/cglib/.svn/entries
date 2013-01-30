@@ -1,0 +1,54 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/hibernate/org/hibernate/tool/instrument/cglib
+file:///d:/repository
+
+
+
+2009-06-12T20:35:45.406250Z
+3
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+InstrumentTask$CustomClassDescriptor.class
+file
+
+
+
+
+2010-03-28T19:25:17.342000Z
+3fc1f1d561c868986d55317fbe66b097
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+InstrumentTask.class
+file
+
+
+
+
+2010-03-28T19:25:17.358000Z
+c09ee151c6652ae6a096ecb453eadd4b
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+

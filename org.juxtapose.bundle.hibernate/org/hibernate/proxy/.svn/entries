@@ -1,0 +1,115 @@
+8
+
+dir
+70
+file:///d:/repository/trunk/hibernate/org/hibernate/proxy
+file:///d:/repository
+
+
+
+2009-06-12T20:35:45.406250Z
+3
+Sony
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+cd0c87b5-32b2-8242-b118-cd5587f66488
+
+AbstractLazyInitializer.class
+file
+
+
+
+
+2010-03-28T19:25:09.639000Z
+c683ba9fc488408331a2d0f8578006e9
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+EntityNotFoundDelegate.class
+file
+
+
+
+
+2010-03-28T19:25:09.889000Z
+10896163b04c431039047b13f2a55931
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+HibernateProxy.class
+file
+
+
+
+
+2010-03-28T19:25:09.920000Z
+cb473211aa043ab3e85b21f63fcf3244
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+HibernateProxyHelper.class
+file
+
+
+
+
+2010-03-28T19:25:09.936000Z
+b01db739b8711cb4232715f9a125988c
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+LazyInitializer.class
+file
+
+
+
+
+2010-03-28T19:25:09.951000Z
+f968eed8ca7ad07782b54040b3c1b860
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+ProxyFactory.class
+file
+
+
+
+
+2010-03-28T19:25:11.326000Z
+825a4f5b804c65441bdc42dc4c74193d
+2009-06-12T20:35:45.406250Z
+3
+Sony
+has-props
+
+dom4j
+dir
+
+map
+dir
+
+pojo
+dir
+
